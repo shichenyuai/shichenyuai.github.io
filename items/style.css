@@ -200,3 +200,17 @@ thead th{
 tbody th{
 	background-color: #DDDDDD;
 }
+body {
+	background-image: url("../items/OIP-C.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	}
+body onload="loadpage();" {
+	background-image: url("../items/dff28a73d7bbdbbf36bdf0470c9049cd.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	}
