@@ -1,0 +1,215 @@
+﻿<!doctype html>
+<html lang="zh-Hans-CN">
+<head>
+  <video src="wall.mp4" class="bjimg" autoplay loop muted></video>
+  <link rel="icon" href="./items/wsad.png" sizes="16x16">
+<meta charset="utf-8" />
+<title>hi很高兴认识你</title>
+<meta name='author' content='SCY@mcbbs' />
+<meta name='keywords' content='minecraft,shichenyul , datapacks' />
+<meta name='description' content='Minecraft 原版模组入门教程' />
+<meta name='revised' content='SCY@mcbbs' />
+<base href="" />
+<link rel="shortcut icon" href="https://shichenyul.gitee.io/favicon.ico" />
+<link rel="stylesheet" href="items/style.css" />
+<script>
+  function hidecomment(thiselement){
+    var classElements = document.getElementsByClassName('comment');
+    for (var i=0; i<classElements.length; i++) {
+      classElements[i].style.display = 'none';
+    }
+    thiselement.style.display='none';
+    thiselement.nextElementSibling.style.display='block';
+  }
+  function showcomment(thiselement){
+    var classElements = document.getElementsByClassName('comment');
+    for (var i=0; i<classElements.length; i++) {
+      classElements[i].style.display = 'inline';
+    }
+    thiselement.previousElementSibling.style.display='block';
+    thiselement.style.display='none';        
+  }
+  function content_level_1(thiselement){
+    var i;
+    var navall = document.getElementsByTagName('nav')[0].childNodes[1].getElementsByTagName('li');
+    for (i=0; i<navall.length; i++) navall[i].style.display = 'none';
+    var navsec = document.getElementsByTagName('nav')[0].childNodes[1].childNodes;
+    for (i=1; i<navsec.length; i+=2) navsec[i].style.display = 'block';
+    thiselement.style.display='none';
+    thiselement.nextElementSibling.style.display='block';
+  }
+  function content_level_2(thiselement){
+    var i,j;
+    var navall = document.getElementsByTagName('nav')[0].childNodes[1].getElementsByTagName('li');
+    for (i=0; i<navall.length; i++) {
+      navall[i].style.display = 'none';
+    }
+    var navsec = document.getElementsByTagName('nav')[0].childNodes[1].childNodes;
+    var navsubsec;
+
+    navsec[1].style.display = 'block';
+    navsec[3].style.display = 'block';
+    navsubsec = navsec[3].childNodes[2].childNodes;
+    for (j=1; j<navsubsec.length; j+=2) navsubsec[j].style.display = 'block';
+
+    for (i=5; i<navsec.length; i+=2) {
+      navsec[i].style.display = 'block';
+      if(navsec[i].childNodes.length>=2){
+        navsubsec = navsec[i].childNodes[1].childNodes;
+        for (j=1; j<navsubsec.length; j+=2) navsubsec[j].style.display = 'block';
+      }
+    }
+    thiselement.style.display='none';
+    thiselement.nextElementSibling.style.display='block';
+  }
+  function content_level_3(thiselement){
+    var i;
+    var navall = document.getElementsByTagName('nav')[0].childNodes[1].getElementsByTagName('li');
+    for (i=0; i<navall.length; i++) navall[i].style.display = 'block';
+    thiselement.style.display='none';
+    thiselement.previousElementSibling.previousElementSibling.style.display='block';
+  }
+  function loadpage(){
+    var files=document.getElementsByClassName("file");
+    for (var i=0;i<files.length;i++) {
+      files[i].onclick=function (){
+        var j=1;
+        if (this.nextElementSibling.style.display=='none') j=0;
+        if (j==1) this.nextElementSibling.style.display='none';
+        else this.nextElementSibling.style.display='block';
+      }
+    }
+  }
+</script>
+<!-- <style>
+  html{  
+    filter: grayscale(100%);  
+    -webkit-filter: grayscale(100%);  
+    -moz-filter: grayscale(100%);  
+    -ms-filter: grayscale(100%);  
+    -o-filter: grayscale(100%);
+  }
+</style> -->
+</head>
+<body onload="loadpage();">
+<nav>
+<ul>
+  <li><a href="#引言" style="font-weight: bold; text-align: center;">时辰羽</a></li>
+  <li>
+    <a href="#引言">§1. 引言</a><ul>
+    <li><a href="#关于">§1.1 时辰羽</a></li>
+    </ul></li>
+  <li><a href="#整合包">§2 整合包&模组</a><ul>
+    <li><a href="#整合包">§2.1 the ultimate goal</a></li>
+      <li><a href="#须知">§2.1.1 整合包须知</a></li>
+    <li><a href="#模组">§2.2 模组混杂</a></li>
+      <li><a href="#更困难的工作台合成">§2.2.1 困难的工作台合成of1.20.1</a></li>
+      <li><a href="#矿石">§2.2.2 更多矿石of1.20.1</a></li>
+    </ul></li>
+  <li><a href="#问题">§3 常见的问题</a></ul>
+    <li><a href="#后缀">§3.1 后缀问题</a></li>
+    <li><a href="#解压">§3.2 解压软件</a></li>
+    </ul></li>
+<footer id="options">
+<div style="background-color: rgb(0,0,129);" onclick="content_level_1(this);" title="显示目录全部层次">全</div>
+<div style="background-color: rgb(0,0,129);display:none;" onclick="content_level_2(this)" title="显示目录节">节</div>
+<div style="background-color: rgb(0,0,129);display:none;" onclick="content_level_3(this);" title="显示目录小节">小</div>
+
+<div style="background-color: rgb(0,129,0);" onclick="hidecomment(this);" title="显示JSON注释">显</div>
+<div style="background-color: rgb(0,129,0);display:none;" onclick="showcomment(this)" title="隐藏JSON注释">隐</div>
+</footer>
+<footer id="sign">
+<p class="noindent" style="font-size:100%;margin:0; text-align:right;color: hsl(220, 90%, 90%);">SCY</p>
+</footer>
+</nav>
+
+<div id="main_part">
+<img id="banner" src="items/banner.png" alt="时辰羽官网" style="width:100%;"/>
+
+<article>
+<p style="font-style: italic;">最后更新于 2024/01/15</p>
+<h1 id="引言">§1 引言</h1>
+<p>这里是时辰羽的官网，里面包含了时辰羽制作的整合包与模组的下载链接（如果下载不了非牛奶快传的那些文件，请直接打开牛奶快传进行下载）</p>
+
+<p>我做发布的内容都为 Minecraft Java 版 1.20.1 forge版本</p>
+
+<p><ul><li><a href="https://gitee.com/shichenyul/mine-ck/issues">如有问题请到这里反馈</a></li></ul></p>
+
+<h2 id="关于">§1.1 时辰羽</h2>
+<p>本文只包括了关于时辰羽的一些事</p>
+<ul>
+  <li><a href="https://center.mcmod.cn/686376/">时辰羽的mc百科账号</a>
+  <li><a href="https://afdian.net/a/LTCat">启动器pcl</a>和<a href="https://hmcl.huangyuhui.net/">启动器hmcl</a>
+    这两个启动器都可以导入时辰羽发布的整合包</li>
+</ul>
+
+<h1 id="整合包">§2 整合包&模组</h1>
+
+<p>这里包括了时辰羽的模组和整合包，详情请看分支</p>
+
+<h2 id="整合包">§2.1 the ultimate goal</h2>
+<p>我推荐的启动器中的导入功能可以导入这个整合包</p>
+<p>下载列表</p>
+<ul><li><a href="https://cowtransfer.com/s/ec77843fa8144f">奶牛快传口令1pbbsc</a></li></ul>
+<ul><li><a href="https://github.com/shichenyuai/shichenyuai.github.io/releases/tag/the.ultimate.goal">the ultimate goal1.0.0-1.7.0补丁下载下载</a></li></ul>
+
+<h2 id="须知">§2.1.1 整合包须知</h2>
+<p>所有的整合包都为forge打包，如果出现问题<ul><li><a href="https://gitlab.com/shichenyu/mineck/-/issues">请在这里反馈</a></li></ul></p>
+<p>在牛奶快传下载的zip文件都需把后缀改成.zip</p>
+<p>具体教程请看<a href="https://shichenyuai.github.io/#后缀">这里</a></p>
+<h2 id="模组">§2.2 模组混杂</h2>
+<p>这里所展示的模组为时辰羽个人用mcreator制作的</p>
+
+<h2 id="更困难的工作台合成">§2.2.1 困难的工作台合成of1.20.1</h2>
+<ul>此模组将工作台的配方改为64个原木合成一个工作台</ul>
+<ul>
+  <ul><li><a href="https://cowtransfer.com/s/69b589638e414f">牛奶快传口令oumif9</a></li></ul>
+  <ul><li><a href="https://gitlab.com/shichenyu/mineck/-/blob/22bcedc62febd776e183f05cb5e5748f2daf9f32/BCTR_forge-1.20.1.jar">gitlab链接</a></li></ul>
+</ul>
+
+<h2 id="矿石">§2.2.2 更多矿石of1.20.1</h2>
+<p>这个矿石增加了一些原版没有的矿石,并且适配大多模组<div class="comment-row-text"><div class="comment-row-text-content common-text font14"><p>.<span data-by-uid="686376" data-by-nickname="时辰羽" class="uknowtoomuch">原因竟然是时辰羽玩某些模组时,模组并未加入所需物品,导致无法合成????</span></p></div></div></p>
+<p>下载</p>
+<ul>
+  <li><a href="https://cowtransfer.com/s/7de54d5b38404c">1.5.0奶牛快传口令u7isvi</li>
+  <li><a href="https://cowtransfer.com/s/150c092e9f3f4a">2.0.0beta牛奶快传口令in6fsi</a></li>
+  <li><a href="https://gitlab.com/shichenyu/mineck/-/blob/fcd7300a094472b7189f0b8d962a07853d73dd80/It_s_not_just_bronze_ingots2.0.0_forge-1.20.1_beta.jar">2.0.0beta版gitlab链接</a></li>
+  <li><a href="https://gitlab.com/shichenyu/mineck/-/blob/1949da3576640d685400ba0c6e573f6bee2d56b1/_%E9%87%8D%E7%BD%AE2_It_s_not_just_bronze_ingots1.5.0_forge-1.20.1.jar">1.5.0的gitlab链接</a></li>
+</ul>
+
+<h1 id="问题">§3 常见的问题</h1>
+
+<p>这里记录了大部分你可能会遇到的问题,若没有你遇到的问题,请到<a href="https://gitee.com/shichenyul/mine-ck/issues">这里反馈</a></p>
+
+<h2 id="后缀">§3.1 后缀问题</h2>
+
+<p>首先你要确保你打开了<th>文件扩展名</th></p>
+
+<p>打开文件扩展名的方法(这里是win10的方法)</p>
+
+<p>1.打开文件资源管理器(此电脑)</p>
+
+<p>2.点击上方的查看</p>
+
+<p>3.把文件扩展名勾上</p>
+
+<p>随后改exe的文件扩展名</p>
+
+<p>1.找到那个文件</p>
+
+<p>2.右键它,再点击按键m(重命名)</p>
+
+<p>3.删去"exe",写上"zip"</p>
+
+<p>随后,你就完成了!</p>
+
+<h2 id="解压">§3.2 解压软件</h2>
+
+<p><a href="https://www.winrar.com.cn/">WinRAR免费(至少现在)</a></p>
+
+<p>此压缩软件会有大量广告,所以建议下个<a href="https://cdn-www.huorong.cn/">火绒</a></p>
+
+<p>此压缩软件压缩的文件会被保留到C盘不会被删除,所以你也可以用火绒把它的缓存删除</p>
+</article>
+</div>
+</body></html>

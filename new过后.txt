@@ -1,0 +1,1 @@
+  <video src="wall.mp4" class="bjimg" autoplay loop muted></video>
