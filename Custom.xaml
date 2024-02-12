@@ -1,0 +1,325 @@
+﻿<!--𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦
+｀ＳＳＳ　　　ｈ　　　　　　　ｉ
+Ｓ　　　Ｓ　　ｈ
+Ｓ　　　Ｓ　　ｈｈｈｈ　　　ｉｉ　　　　ｃｃｃ　　　ｙ　　　ｙ
+　Ｓ　　　　　ｈ　　　ｈ　　　ｉ　　　ｃ　　　ｃ　　ｙ　　　ｙ
+　　Ｓ　　　　ｈ　　　ｈ　　　ｉ　　　ｃ　　　　　　ｙ　　　ｙ
+　　　Ｓ　　　ｈ　　　ｈ　　　ｉ　　　ｃ　　　　　　　ｙ　ｙ
+Ｓ　　　Ｓ　　ｈ　　　ｈ　　　ｉ　　　ｃ　　　　　　　ｙ　ｙ
+Ｓ　　　Ｓ　　ｈ　　　ｈ　　　ｉ　　　ｃ　　　ｃ　　　　ｙ
+　ＳＳＳ　　　ｈ　　　ｈ　　ｉｉｉ　　　ｃｃｃ　　　　　ｙ
+　　　　　　　　　　　　　　　　　　　　　　　　　　ｙｙ
+╔══╗╔╗╔╗╔══╗╔══╗╔╗╔╗
+║╔═╝║║║║╚╗╔╝║╔═╝║║║║
+║╚═╗║╚╝║─║║─║║──║╚╝║
+╚═╗║║╔╗║─║║─║║──╚═╗║
+╔═╝║║║║║╔╝╚╗║╚═╗─╔╝║
+╚══╝╚╝╚╝╚══╝╚══╝─╚═╝
+https://github.com/shichenyuai
+     𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦 𝑆ℎ𝑖𝑐𝑦
+-->
+<StackPanel.Resources>
+	<Style TargetType="TextBlock" x:Key="Text">
+		<Setter Property="FontWeight" Value="Bold"/>
+		<Setter Property="FontSize" Value="12"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="Margin" Value="65,12,0,0"/>
+	</Style>
+</StackPanel.Resources>
+<StackPanel.Triggers>
+	<EventTrigger RoutedEvent="StackPanel.Loaded" >
+		<BeginStoryboard>
+			<Storyboard x:Name="animation" RepeatBehavior="Forever" >
+				<ColorAnimation BeginTime="0:0:6"
+					Storyboard.TargetName="Text1"
+					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+					From="#8D724C" To="#00000000" Duration="0:0:1"/>
+				<ColorAnimation BeginTime="0:0:17"
+					Storyboard.TargetName="Text1"
+					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+					From="#00000000" To="#8D724C" Duration="0:0:1"/>
+				<ColorAnimation BeginTime="0:0:7"
+					Storyboard.TargetName="Text2"
+					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+					From="#00000000" To="#8D724C" Duration="0:0:1"/>
+				<ColorAnimation BeginTime="0:0:11"
+					Storyboard.TargetName="Text2"
+					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+					From="#8D724C" To="#00000000" Duration="0:0:1"/>
+				<ColorAnimation BeginTime="0:0:12"
+					Storyboard.TargetName="Text3"
+					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+					From="#00000000" To="#8D724C" Duration="0:0:1"/>
+				<ColorAnimation BeginTime="0:0:16"
+					Storyboard.TargetName="Text3"
+					Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
+					From="#8D724C" To="#00000000" Duration="0:0:1"/>
+			</Storyboard>
+		</BeginStoryboard>
+	</EventTrigger>
+</StackPanel.Triggers>
+<local:MyCard  Height="40" CanSwap="False" IsSwaped="False" Margin="0,0,0,15">
+
+    	<TextBlock x:Name="Text1" HorizontalAlignment="Left" Text=" Shicy  " FontSize="13" Style="{StaticResource Text}" Foreground="#8D724C" Margin="12,12">
+
+	    </TextBlock>
+	    <TextBlock x:Name="Text2" HorizontalAlignment="Left" Text=" 羽羽羽羽羽 "   FontSize="13" Style="{StaticResource Text}" Foreground="#00000000"  Margin="12,12">
+
+	    </TextBlock>
+	    <TextBlock x:Name="Text3" HorizontalAlignment="Left" Text="时辰羽 " Style="{StaticResource Text}"    FontSize="13" Foreground="#00000000"  Margin="12,12">
+
+	    </TextBlock>
+
+
+
+
+	        <Border Background="{DynamicResource ColorBrush6}" BorderBrush="{DynamicResource ColorBrush5}"
+            		BorderThickness="2" HorizontalAlignment="Right" CornerRadius="3" Margin="5,5" Width="145" Height="25"/>
+                     <local:MyButton Margin="0,10,120,10" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="刷新主页" EventType="刷新主页">
+                     		<Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
+                     			<Path.Data>
+                     				<PathGeometry FillRule="Nonzero" Figures="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"/>
+                     			</Path.Data>
+                     		</Path>
+                     	</local:MyButton>
+                     	<local:MyButton Margin="0,10,100,10" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="Shicy" EventType="弹出窗口" EventData="Shicy|1145141919810">
+                        		<Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="10" Height="15">
+                        			<Path.Data>
+                        				<PathGeometry FillRule="Nonzero" Figures="M13.5,4A1.5,1.5 0 0,0 12,5.5A1.5,1.5 0 0,0 13.5,7A1.5,1.5 0 0,0 15,5.5A1.5,1.5 0 0,0 13.5,4M13.14,8.77C11.95,8.87 8.7,11.46 8.7,11.46C8.5,11.61 8.56,11.6 8.72,11.88C8.88,12.15 8.86,12.17 9.05,12.04C9.25,11.91 9.58,11.7 10.13,11.36C12.25,10 10.47,13.14 9.56,18.43C9.2,21.05 11.56,19.7 12.17,19.3C12.77,18.91 14.38,17.8 14.54,17.69C14.76,17.54 14.6,17.42 14.43,17.17C14.31,17 14.19,17.12 14.19,17.12C13.54,17.55 12.35,18.45 12.19,17.88C12,17.31 13.22,13.4 13.89,10.71C14,10.07 14.3,8.67 13.14,8.77Z"/>
+                        			</Path.Data>
+                        		</Path>
+                        	</local:MyButton>
+                            	<local:MyButton Margin="0,10,80,10" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="退出" EventType="打开文件"
+                                		EventData="cmd.exe|/c start /min /b taskkill /FI &quot;windowtitle eq plain*&quot;">
+                                		<Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="13" Height="15">
+                                			<Path.Data>
+                                				<PathGeometry FillRule="Nonzero" Figures="M16.56,5.44L15.11,6.89C16.84,7.94 18,9.83 18,12A6,6 0 0,1 12,18A6,6 0 0,1 6,12C6,9.83 7.16,7.94 8.88,6.88L7.44,5.44C5.36,6.88 4,9.28 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12C20,9.28 18.64,6.88 16.56,5.44M13,3H11V13H13"/>
+                                			</Path.Data>
+                                		</Path>
+								</local:MyButton>
+                                   	<local:MyButton Margin="0,10,60,10" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="解决问题" EventType="复制文本" EventData="https://gitee.com/shichenyul/mine-ck/issues">
+                                   		<Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
+                                            <Path.Data>
+                                                <PathGeometry FillRule="Nonzero" Figures="M510 959c-51-31-40-86-74-120-61-63-168-66-231-138C-5 457 196 3 593 70c231 39 407 363 250 592-67 98-198 106-277 213-23 23-11 81-55 83zM176 432c-9 176 240 167 240 9 0-80-72-145-166-111-66 23-71 49-74 101z m509 129c212 59 217-307 0-231-102 36-90 206 0 231z m-213 111c33 7 44-91 9-92-19 19-64 79-9 92z m83 0H575c23-37-8-87-46-92 3 37-11 92 27 92z"/>
+                                            </Path.Data>
+                                   		</Path>
+                                   	</local:MyButton>
+                                   	<local:MyButton Margin="0,10,40,10" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="今日人品" EventType="今日人品" >
+                                   		<Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
+                                            <Path.Data>
+                                                <PathGeometry FillRule="Nonzero" Figures="M230.4 947.2v-76.8h243.2v-130.5856c-129.1776-17.6128-230.4768-122.8288-242.0992-253.824A166.4 166.4 0 0 1 76.8 320V128h153.6V76.8h563.2v51.2h153.6v192a166.4 166.4 0 0 1-154.752 165.9904c-11.5712 130.9696-112.8704 236.1856-242.0224 253.7984L550.4 870.4H793.6v76.8H230.4zM716.8 153.6H307.2v307.2a204.8 204.8 0 0 0 198.4 204.6976L512 665.6a204.8 204.8 0 0 0 204.8-204.8V153.6zM230.4 204.8H153.6v115.2a89.6 89.6 0 0 0 76.8 88.704V204.8z m640 0h-76.8v203.8784a89.6 89.6 0 0 0 76.8-88.6784V204.8z"/>
+                                            </Path.Data>
+                                   		</Path>
+                                   	</local:MyButton>
+                                    <local:MyButton Margin="0,10,20,10" Width="15" Height="15" HorizontalAlignment="Right" ToolTip="内存优化物理减少1/3的内存，不仅限于MC！" EventType="内存优化">
+                                        <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
+                                                                                <Path.Data>
+                                                                                    <PathGeometry FillRule="Nonzero" Figures="M874.666667 864H170.666667c-6.4 0-10.666667-4.266667-10.666667-10.666667V149.333333c0-17.066667-14.933333-32-32-32S96 132.266667 96 149.333333v704c0 40.533333 34.133333 74.666667 74.666667 74.666667h704c17.066667 0 32-14.933333 32-32s-14.933333-32-32-32zM437.333333 469.333333v320c0 17.066667 14.933333 32 32 32s32-14.933333 32-32V469.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32zM298.666667 821.333333c17.066667 0 32-14.933333 32-32V533.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v256c0 17.066667 14.933333 32 32 32zM640 565.333333c-17.066667 0-32 14.933333-32 32v192c0 17.066667 14.933333 32 32 32s32-14.933333 32-32v-192c0-17.066667-14.933333-32-32-32zM810.666667 352c-17.066667 0-32 14.933333-32 32v405.333333c0 17.066667 14.933333 32 32 32s32-14.933333 32-32V384c0-17.066667-14.933333-32-32-32zM322.133333 407.466667l147.2-147.2 147.2 147.2c6.4 6.4 14.933333 8.533333 23.466667 8.533333h2.133333c8.533333 0 17.066667-6.4 23.466667-12.8l170.666667-234.666667c10.666667-14.933333 6.4-34.133333-6.4-44.8-14.933333-10.666667-34.133333-6.4-44.8 6.4l-149.333334 204.8L490.666667 189.866667c-12.8-12.8-32-12.8-44.8 0l-170.666667 170.666666c-12.8 12.8-12.8 32 0 44.8 12.8 12.8 34.133333 12.8 46.933333 2.133334z"/>
+                                                                                </Path.Data>
+                                                                       		</Path>
+                                                                       	</local:MyButton>
+
+
+</local:MyCard>
+
+<local:MyCard Margin="0,0,0,12" Title="欢迎页" CanSwap="True" IsSwaped="True">
+     <StackPanel Margin="24,40,24,15">
+          <TextBlock HorizontalAlignment="Center" Margin="0,0,0,12" Foreground="{DynamicResource ColorBrush2}" FontSize="20"
+               Text="欢迎下载Shicy的艺术创作小玩意" />
+          <local:MyHint Text="改编者: Shicy" Margin="0,0,0,0" Padding="0,2,0,2" IsWarn="False" />
+          <Calendar HorizontalAlignment="Center" Margin="0,12,0,10" Grid.Column="0"/>
+               <Path Fill="{DynamicResource ColorBrush5}" Stretch="Fill" Width="15" Height="15">
+                    <Path.Data>
+                         <PathGeometry FillRule="Nonzero" Figures="M256.455,8C322.724,8.119,382.892,34.233,427.314,76.685L463.029,40.97C478.149,25.851,504,36.559,504,57.941L504,192C504,205.255,493.255,216,480,216L345.941,216C324.559,216,313.851,190.149,328.97,175.029L370.72,133.279C339.856,104.38 299.919,88.372 257.49,88.006 165.092,87.208 87.207,161.983 88.0059999999999,257.448 88.764,348.009 162.184,424 256,424 297.127,424 335.997,409.322 366.629,382.444 371.372,378.283 378.535,378.536 382.997,382.997L422.659,422.659C427.531,427.531 427.29,435.474 422.177,440.092 378.202,479.813 319.926,504 256,504 119.034,504 8.001,392.967 8,256.002 7.999,119.193 119.646,7.755 256.455,8z"/>
+                    </Path.Data>
+               </Path>
+          </StackPanel>
+</local:MyCard>
+
+            <local:MyCard Margin="0,0,0,15" Title="回声洞" x:Name="PanHint">
+                <local:MyIconButton LogoScale="1.1" Logo="M875.52 148.48C783.36 56.32 655.36 0 512 0 291.84 0 107.52 138.24 30.72 332.8l122.88 46.08C204.8 230.4 348.16 128 512 128c107.52 0 199.68 40.96 271.36 112.64L640 384h384V0L875.52 148.48zM512 896c-107.52 0-199.68-40.96-271.36-112.64L384 640H0v384l148.48-148.48C240.64 967.68 368.64 1024 512 1024c220.16 0 404.48-138.24 481.28-332.8L870.4 645.12C819.2 793.6 675.84 896 512 896z"
+                                    Height="21" Margin="10" HorizontalAlignment="Right" VerticalAlignment="Top"
+                                    ToolTip="刷新回声洞" EventData="刷新主页" EventType="刷新主页" />
+                <StackPanel Margin="25,38,23,15">
+                    <TextBlock Text="{cave}"  HorizontalAlignment="Left" TextWrapping="Wrap" />
+                </StackPanel>
+            </local:MyCard>
+
+<local:MyCard Title="关于时辰羽" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Foreground="#8C7721"
+                    Text="如果遇见问题请来https://gitee.com/shichenyul/mine-ck/issues" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="11"
+                    Text="时辰羽的MC百科账号https://center.mcmod.cn/686376/" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="须知" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+		<local:MyHint Text="游戏内存分配至少6GB" />
+		<local:MyHint Margin="0,8,0,2" IsWarn="False"
+                    Text="如果你的电脑内存不够？那么我推荐一个非常适用的方法：买内存条" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="快速链接" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="快速链接" />
+		<local:MyIconTextButton Margin="0,4,0,8" Height="35" HorizontalAlignment="Center"
+                    Text="Shcy官网" EventType="打开网页" EventData="https://shichenyuai.github.io/"
+                    LogoScale="1.02" Logo="M1091 0H78C35 0 0 35 0 78v863c0 43 35 78 78 78H1091c43 0 78-35 78-78V78C1170 35 1134 0 1091 0z m-8 87v78H87v-78h994zM87 933V254h994v679H87v0zM724 340l-206 547a43 43 0 0 1-82-31l206-547a43 43 0 0 1 82 30zM369 545l-85 85 85 85a43 43 0 0 1-62 62l-116-116a43 43 0 0 1 0-62l116-116a43 43 0 0 1 62 61z m610-37a43 43 0 0 1 0 62l-116 116a43 43 0 0 1-62 0 43 43 0 0 1 0-62l85-85-85-85a43 43 0 0 1 62-62l116 116z" />
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,4"
+                    Text="如果有问题，点击下方" />
+		<local:MyIconTextButton Margin="0,4,0,8" Height="35" HorizontalAlignment="Center"
+                    ColorType="Highlight" Text="解决问题" EventType="打开网页" EventData="https://gitee.com/shichenyul/mine-ck/issues"
+                    LogoScale="1" Logo="M510 959c-51-31-40-86-74-120-61-63-168-66-231-138C-5 457 196 3 593 70c231 39 407 363 250 592-67 98-198 106-277 213-23 23-11 81-55 83zM176 432c-9 176 240 167 240 9 0-80-72-145-166-111-66 23-71 49-74 101z m509 129c212 59 217-307 0-231-102 36-90 206 0 231z m-213 111c33 7 44-91 9-92-19 19-64 79-9 92z m83 0H575c23-37-8-87-46-92 3 37-11 92 27 92z" />
+		<Path Margin="0,4,0,0" Width="20" Height="20" HorizontalAlignment="Center"
+                    Stretch="Uniform" Fill="{DynamicResource ColorBrush1}"
+                    Data="M149 873c47 47 101 83 162 109 63 26 130 40 199 40 69 0 136-13 199-40 61-25 115-62 162-109s83-101 109-162c26-63 40-130 40-199 0-69-13-136-40-199-25-61-62-115-109-162-46-46-101-83-162-109C648 13 580 0 511 0s-136 13-199 40c-61 25-115 62-162 109s-83 101-109 162C13 375 0 442 0 511s13 136 40 199c25 61 62 115 109 162zM97 511c0-228 185-414 414-414 228 0 414 185 414 414S740 926 511 926c-228 0-414-185-414-414z M539 244c-8-4-17-7-27-7-9 0-19 2-27 7-16 9-27 27-27 47 0 30 24 54 54 54 30 0 54-24 54-54 0-19-10-37-27-47zM566 732v-284c0-30-24-54-54-54-30 0-54 24-54 54v284c0 30 24 54 54 54 30 0 54-24 54-54z" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="Shicy官网二维码" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+	<StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Width="320" HorizontalAlignment="Right"
+                    Text="你可以直接用手机扫描二维码来打开Shicy的官网" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,6"
+                    Text="Shicy将会推出自动更新的启动器页面" />
+		<Image Height="50" HorizontalAlignment="Center" Source="https://shichenyuai.github.io/items/githubpage.png" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="网站" CanSwap="True" IsSwaped="False" Margin="0,0,0,15">
+        <StackPanel Margin="25,40,23,15" >
+
+
+<Grid UseLayoutRounding="True">
+	<Grid.RowDefinitions>
+		<RowDefinition></RowDefinition>
+	</Grid.RowDefinitions>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="12*"></ColumnDefinition>
+		<ColumnDefinition Width="0.5*"></ColumnDefinition>
+		<ColumnDefinition Width="12*"></ColumnDefinition>
+	</Grid.ColumnDefinitions>
+                    <local:MyListItem Margin="-5,0,-5,8" Logo="pack://application:,,,/images/Blocks/Grass.png" Title="我的世界" Info="我的世界官网"
+                                    EventType="打开网页" EventData="https://www.minecraft.net/zh-hans" Type="Clickable" />
+                    <local:MyListItem Margin="0,0,-5,8" Logo="https://www.mcbbs.net/template/mcbbs/image/logo_sc.png" Title="MCBBS" Info="我的世界中文论坛"
+                    EventType="打开网页" EventData="https://www.mcbbs.net/" Type="Clickable" Grid.Column="3"/>
+</Grid>
+<Grid UseLayoutRounding="True">
+	<Grid.RowDefinitions>
+		<RowDefinition></RowDefinition>
+	</Grid.RowDefinitions>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="12*"></ColumnDefinition>
+		<ColumnDefinition Width="0.5*"></ColumnDefinition>
+		<ColumnDefinition Width="12*"></ColumnDefinition>
+	</Grid.ColumnDefinitions>
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.mcmod.cn/static/public/images/favicon.ico" Title="MCMOD" Info="mod百科"
+                                EventType="打开网页" EventData="https://www.mcmod.cn/" Type="Clickable"/>
+                <local:MyListItem Margin="0,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="哔哩哔哩" Info="哔哩哔哩官网"
+                             EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" Grid.Column="3"/>
+</Grid>
+<Grid UseLayoutRounding="True">
+	<Grid.RowDefinitions>
+		<RowDefinition></RowDefinition>
+	</Grid.RowDefinitions>
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition Width="12*"></ColumnDefinition>
+		<ColumnDefinition Width="0.5*"></ColumnDefinition>
+		<ColumnDefinition Width="12*"></ColumnDefinition>
+	</Grid.ColumnDefinitions>
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.baidu.com/favicon.ico"
+                             Title="百度" Info="百度官网" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable"/>
+                <local:MyListItem Margin="0,0,-5,8" Logo="https://store.steampowered.com/favicon.ico" Title="Steam" Info="Steam官网"
+                    EventType="打开网页" EventData="https://store.steampowered.com/" Type="Clickable" Grid.Column="3"/>
+</Grid>
+<local:MyButton Margin="0,0,0,8" Text="新闻主页 - 信标" ToolTip="最亮的信标编写" Height="35" HorizontalAlignment="Center" Width="260" EventType="打开帮助" EventData="https://news.bugjump.net/News.json" />
+       </StackPanel>
+</local:MyCard>
+           <local:MyCard Title="更多页面" Margin="0,0,0,15">
+              <StackPanel Margin="25,40,23,15">
+                <Grid>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="100" />
+                  </Grid.ColumnDefinitions>
+                  <local:MyComboBox x:Name="jumpbox" Height="30" SelectedIndex="0">
+                    <local:MyComboBoxItem Content="SYC主页更新日志"/>
+					<local:MyComboBoxItem Content="自定义主页教学"/>
+                    <local:MyComboBoxItem Content="小功能" />
+                  </local:MyComboBox>
+                  <local:MyButton HorizontalAlignment="Center" Width="80" Grid.Column="1" Text="跳转→" EventType="打开帮助" EventData="{Binding Path=Text,ElementName=jumpbox,StringFormat=http://gluvsf.mcfuns.cn/Help/{0}.json}" />
+                </Grid>
+              </StackPanel>
+            </local:MyCard>
+
+<local:MyCard Title="计算机" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+
+</local:MyCard>
+
+<!-- 
+
+全部通用的属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+ - HorizontalAlignment：设置横向对齐方式，居左：Left、居中：Center、居右：Right、拉伸（默认）：Stretch
+ - VerticalAlignment：设置纵向对齐方式，居上：Top、居中：Center、居下：Bottom、拉伸（默认）：Stretch
+ - IsHitTestVisible：该控件是否响应交互（点击、指向动画等），True 为是（默认），False 为否
+
+TextBlock（纯文本）：
+ - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+ - FontWeight：设置为 Bold 时，文字加粗
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+
+Image（图片）：
+ - Source：要显示的图片的网址，或 PCL 内置图片位置
+
+local:MyCard（卡片）：
+ - Title：设置显示的标题文本
+ - CanSwap：卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：卡片是否默认折叠，要求 CanSwap 必须为 True
+ - HorizontalAlignment：若使用，要求 CanSwap 必须为 False
+ - UseAnimation：是否在展开等高度改变时触发动画，True 为是（默认），False 为否
+ - SwapLogoRight：卡片折叠时的箭头是朝下还是朝右，True 为朝右，False 为朝下（默认）
+ - HasMouseAnimation：是否在鼠标指向时改变卡片颜色，True 为是（默认），False 为否
+
+local:MyHint（提示条）：
+ - Text：设置显示的文本（&#xA; 代表换行）
+ - IsWarn：设置为 True 代表警告样式，False 代表提示样式
+
+local:MyButton（按钮）：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
+ - EventType、EventData：触发特定事件
+
+local:MyTextButton（文本按钮）：
+ - Text：设置显示的文本
+ - EventType、EventData：触发特定事件
+
+local:MyListItem（列表项）：
+ - Logo：列表项的图标（所指定的可以是链接也可以是文件路径）
+ - Title：列表项的大标题
+ - Info：列表项的详细信息，它将会以灰色显示在大标题下方
+ - Type：若留空仅单纯展示信息，设置为 Clickable 触发相应活动
+
+local:MyIconTextButton（带图标的按钮）：
+ - Text：设置显示的文本
+ - Logo：设置显示的图标
+ - LogoScale：设置图标的缩放，默认为 1
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，默认为黑色）
+ - EventType、EventData：触发特定事件
+
+local:MyIconButton（图标按钮）：
+ - Logo：设置显示的图标
+ - LogoScale：设置图标的缩放，默认为 1
+ - Theme：设置颜色主题，Color（默认）为当前启动器的主题颜色，也可设置为 White、Black、Red
+ - EventType、EventData：触发特定事件
+
+-->
